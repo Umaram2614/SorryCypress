@@ -8,7 +8,7 @@
     "build": "babel src -d lib",
     "start": "npx cypress open",
     "runHeadless": "./node_modules/.bin/cypress run --headless",
-    "f": "skylab-cms=http://localhost:8080/Skylab-CMS cy2 run --reporter mochawsome --reporter-options reportDir=\"results\",overwrite=false,html=false,json=true --parallel --record --key somekey --ci-build-id build-1"
+    "f": "Dashboard_Test=http://localhost:8080/Demo_Project/runs cy2 run --reporter mochawsome --reporter-options reportDir=\"results\",overwrite=true,html=false,json=true --parallel --record --key somekey --ci-build-id build-1"
   },
   "repository": {
     "type": "git",
