@@ -73,6 +73,6 @@
       "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
       
     },
-    "include":["**/*.ts"]
+    "include":["**/*.ts", "currents.config.js"]
   }
   
