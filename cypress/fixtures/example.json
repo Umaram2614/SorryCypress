@@ -1,5 +1,16 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  
+  "valid": {
+    "UserName":"executive@yopmail.com",
+    "Password": "Augusta@12"
+  },
+  "Invalid": {
+    "UserName":"executivedsasd@yopmail.com",
+    "Password": "Augusta@asda12"
+  },
+  "Blank": {
+    "UserName":"a",
+    "Password": "a"
+  },
+  "appname" :"Skylab Blue Test"
 }
