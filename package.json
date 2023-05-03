@@ -26,6 +26,7 @@
     "cypress-cloud": "^1.7.3"
   },
   "devDependencies": {
+    "@types/mocha": "^10.0.1",
     "typescript": "^5.0.4"
   }
 }
