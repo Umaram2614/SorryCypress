@@ -11,7 +11,7 @@ describe('App Selection(qa)', () => {
     beforeEach(()=>{
         cy.mRestoreLocalStorage();
     });
-it('Verify Home page title',,() => {
+it('Verify Home page title',() => {
     gamificationMain.titleCheck()
             })
 it('Verify app selection from the side panel', () => {
