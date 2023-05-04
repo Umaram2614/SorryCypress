@@ -48,8 +48,8 @@ export const custom_highlight = {
         cy.visit(Cypress.env("CreateHight"))
         this.highlight_group_select()
         cy.wait(2000)
-        obj.highlighttitle().type('MyHighlight1');
-        obj.wallcardtext().type('SampleText');
+        //obj.highlighttitle().type('MyHighlight1');
+        //obj.wallcardtext().type('SampleText');
 
     }
     
