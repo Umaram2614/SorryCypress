@@ -1,5 +1,5 @@
 ///<reference types="cypress"/>
-import { LoginPage as Login } from "../pom_file/login_Page";
+import { LoginPage_class as Login } from "../pom_file/login_Page";
 import data from "../fixtures/example.json"
 let obj=new Login()
 export const login = {

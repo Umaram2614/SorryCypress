@@ -1,5 +1,5 @@
-import {login} from "../support/login_feature.cy"
-describe('Login Feature', () => {
+import {login} from "../support/01_login_Feature.cy"
+describe('Login Feature(qa)', () => {
 afterEach(function onAfterEach() {
     if (this.currentTest?.state === "failed") {
       cy.setCookie('shouldSkip', 'true');
@@ -20,7 +20,7 @@ it('Verify unsuccessful login with Invalid inputs', () => {
  debugger;
   login.login("Invalid") 
 })
-it('Verify unsuccessful login with Blank inputs', () => {
+it('Verify unsuccessful login with Blank inputs',() => {
   debugger;
   login.login("Blank") 
 })
@@ -30,4 +30,9 @@ it('Verify successful login with valid inputs', () => {
   cy.task("log","Logged Successfully")
 })
 
+  })
+describe('Login Feature 2 (stg)', () => {
+  it('Verify successful login with valid inputs', () => {
+    cy.task("log","Logged Successfully")
+  })
   })

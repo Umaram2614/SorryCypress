@@ -1,6 +1,6 @@
-import {gamificationMain} from "../support/gamificationMain_Feature.cy"
-import {login} from "../support/login_feature.cy"
-describe('Login Feature', () => {
+import {gamificationMain} from "../support/02_app_Selection.cy"
+import {login} from "../support/01_login_Feature.cy"
+describe('App Selection(qa)', () => {
     before(()=>{
         login.visit()
         login.login("valid")      
@@ -11,11 +11,11 @@ describe('Login Feature', () => {
     beforeEach(()=>{
         cy.mRestoreLocalStorage();
     });
-it('Verify the app selection from the side panel', () => {
+it('Verify Home page title',,() => {
+    gamificationMain.titleCheck()
+            })
+it('Verify app selection from the side panel', () => {
     gamificationMain.selectapp()
             })
-it('Verify the create highlight page navigation', () => {
-    gamificationMain.createhighlight()
-    })
-    
+
 })

@@ -1,14 +1,14 @@
 ///<reference types="cypress"/>
 import data from "../fixtures/selector.json"
-export class LoginPage {
+export class LoginPage_class{
   getUserName() {
-      return cy.get(data.user_name);
+      return cy.get(data.login.user_name);
   }
   getPassword(){
-      return cy.get(data.pass_word);
+      return cy.get(data.login.pass_word);
   }
   getLoginButton(){
-      return cy.get(data.login_button);
+      return cy.get(data.login.login_button);
   }
   snackbar(){
     return cy.contains("Invalid E-mail ID");
