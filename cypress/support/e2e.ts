@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import '@cypress/code-coverage/support'
 const registerCypressGrep = require('@cypress/grep')
 registerCypressGrep()
 // Alternatively you can use CommonJS syntax:

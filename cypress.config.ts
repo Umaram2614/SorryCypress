@@ -22,11 +22,22 @@ module.exports = defineConfig({
       })
       require('@cypress/grep/src/plugin')(config);
       return cloudPlugin(on, config);
-     
+      
     },
+
+
     specPattern: 'cypress/e2e/**.{js,jsx,ts,tsx}',
         projectId: "gkjk12",
         experimentalRunAllSpecs: true
   }
  
 });
+module.exports = (on:any, config:any) => {
+  require('@cypress/code-coverage/task')(on, config)
+
+  // add other tasks to be registered here
+
+  // IMPORTANT to return the config object
+  // with the any changed environment variables
+  return config
+}

@@ -20,10 +20,10 @@ login(status:string): void {
 if (status=="valid"){
   obj.getUserName()
   .should('be.visible')
-  .type(data.valid.UserName)
+  .type(data.valid.UserName).debug().pause();
   obj.getPassword()
    .should('be.visible')
-   .type(data.valid.Password)
+   .type(data.valid.Password).debug().pause();
    obj.getLoginButton().click()
 
 }
